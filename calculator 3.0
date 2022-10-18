@@ -1,0 +1,93 @@
+package jnzzz;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Estelloso_CPE112
+ */
+public class Jnzzz {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+        Scanner input = new Scanner(System.in);
+       while (true){ 
+           System.out.println("_________________________________");
+        System.out.println("this is another day another slay calculator");
+        System.out.println("input [1] to enter the slay calculayor");
+        System.out.println("input [2] to enter odd and even chekwer");
+   int c1 = input.nextInt();
+        
+   int c2 = 0;
+        
+   
+   
+switch (c1){
+    case 1:
+
+double x1;
+double x2;
+String x3;
+
+System.out.println ("hey thiz is jnz calc");
+System.out.println ("Please input 2 numbers");
+System.out.println("_________________________________");
+
+System.out.println ("input your first number:.");
+x1= input.nextDouble();
+System.out.println ("input your second number:");
+
+x2= input.nextDouble();
+System.out.println ("Pwease input your desired operation(+,-,*,/)");
+System.out.println("_________________________________");
+x3= input.next();
+
+if (x3.equals("+")){
+System.out.println (x1 + x2);
+System.out.println ("Addition slay, please press [1] to return");
+
+}
+else if (x3.equals("-")){
+System.out.println(x1-x2);
+System.out.println ("Subtraction slay, please press [1] to return");
+
+}
+else if (x3.equals("*")){
+System.out.println(x1 * x2);
+System.out.println ("Multiplication slay, please press [1] to return");
+
+}
+else if (x3.equals("/")){
+System.out.println(x1 / x2);
+System.out.println ("Division slay, please press [1] to return");
+}
+
+
+
+break;
+            
+case 2:
+System.out.println("_________________________________");
+     System.out.println(" odd or even checker");
+        System.out.println("Please input a number");
+        System.out.println("_________________________________");
+        
+        double xx1=input.nextDouble();
+        
+        if (xx1 % 2 == 0)
+                System.out.println("number is even");
+        else 
+            System.out.println("number is odd");
+        System.out.println("please press [1] to return");
+       
+        break;
+       
+}  
+}    
+}   
+}
+    
+    
